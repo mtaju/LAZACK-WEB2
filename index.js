@@ -13,17 +13,17 @@ const fs = require("fs-extra");
 const { Boom } = require("@hapi/boom");
 const PORT = process.env.PORT ||  5000
 const MESSAGE = process.env.MESSAGE ||  `
-╔════◇
-║ *『 WAOW YOU CHOOSE SUHAIL-MD 』*
-║ _You complete first step to making Bot._
-╚════════════════════════╝
-╔═════◇
-║  『••• 𝗩𝗶𝘀𝗶𝘁 𝗙𝗼𝗿 𝗛𝗲𝗹𝗽 •••』
-║ *Ytube:* _youtube.com/SuhailTechInfo_
-║ *Owner:* _https://wa.me/923184474176_
-║ *Note :*_Don't provide your SESSION_ID to_
-║ _anyone otherwise that can access chats_
-╚════════════════════════╝
+┌───⭓『
+❒ *LAZACK-MD*
+❒ _NOW DEPLOY IT_
+└────────────⭓
+┌───⭓
+❒  • Chat with owner •
+❒ *whatapp:* __https://chat.whatsapp.com/KYmevXcP6Ki89fpqbQHoEf_
+❒ *Author:* _https://wa.me/message/S4444FEFY35KH1_
+❒ *read:* _still working on my project_
+└────────────⭓
+¢special thanks to starxmen mr andbad and gmax tech
 `
 
 
