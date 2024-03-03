@@ -127,7 +127,7 @@ SESSION-ID ==> ${Scan_Id}
 
 
 
-  SUHAIL().catch(async(err) => {
+  LAZACK().catch(async(err) => {
     console.log(err)
     await fs.emptyDirSync(__dirname+'/auth_info_baileys'); 
 
