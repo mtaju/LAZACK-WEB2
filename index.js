@@ -15,7 +15,7 @@ const PORT = process.env.PORT ||  5000
 const MESSAGE = process.env.MESSAGE ||  `
 ┌───⭓『
 ❒ *LAZACK-MD*
-❒ _NOW DEPLOY IT_
+❒ _THANK YOU FOR CHOOSING_
 └────────────⭓
 ┌───⭓
 ❒  • Chat with owner •
@@ -23,7 +23,6 @@ const MESSAGE = process.env.MESSAGE ||  `
 ❒ *Author:* _https://wa.me/message/S4444FEFY35KH1_
 ❒ *read:* _still working on my project_
 └────────────⭓
-¢special thanks to starxmen mr andbad and gmax tech
 `
 
 
@@ -44,7 +43,7 @@ if (fs.existsSync('./auth_info_baileys')) {
 
   const { default: LazackWASocket, useMultiFileAuthState, Browsers, delay,DisconnectReason, makeInMemoryStore, } = require("@whiskeysockets/baileys");
   const store = makeInMemoryStore({ logger: pino().child({ level: 'silent', stream: 'store' }) })
-  async function LAZACK() {
+  async function Lazack() {
     const { state, saveCreds } = await useMultiFileAuthState(__dirname + '/auth_info_baileys')
     try {
       let Smd =LazackWASocket({ 
@@ -94,16 +93,16 @@ SESSION-ID ==> ${Scan_Id}
             // console.log("Reason : ",DisconnectReason[reason])
             if (reason === DisconnectReason.connectionClosed) {
               console.log("Connection closed!")
-             // SUHAIL().catch(err => console.log(err));
+             // Lazack().catch(err => console.log(err));
             } else if (reason === DisconnectReason.connectionLost) {
                 console.log("Connection Lost from Server!")
-            //  SUHAIL().catch(err => console.log(err));
+            //  Lazack().catch(err => console.log(err));
             } else if (reason === DisconnectReason.restartRequired) {
                 console.log("Restart Required, Restarting...")
-              SUHAIL().catch(err => console.log(err));
+              Lazack().catch(err => console.log(err));
             } else if (reason === DisconnectReason.timedOut) {
                 console.log("Connection TimedOut!")
-             // SUHAIL().catch(err => console.log(err));
+             // Lazack().catch(err => console.log(err));
             }  else {
                 console.log('Connection closed with bot. Please run again.');
                 console.log(reason)
@@ -127,7 +126,7 @@ SESSION-ID ==> ${Scan_Id}
 
 
 
-  LAZACK().catch(async(err) => {
+  Lazack().catch(async(err) => {
     console.log(err)
     await fs.emptyDirSync(__dirname+'/auth_info_baileys'); 
 
